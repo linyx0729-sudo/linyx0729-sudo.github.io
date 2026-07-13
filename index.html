@@ -3,76 +3,179 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Linyx | Personal Homepage</title>
+    <title>Your Name | Personal Homepage</title>
     <meta
       name="description"
-      content="Linyx 的个人主页，汇集 GitHub 资料、联系方式和个人展示入口。"
+      content="A personal homepage framework for research, projects, publications, and notes."
     />
-    <meta property="og:title" content="Linyx | Personal Homepage" />
+    <meta property="og:title" content="Your Name | Personal Homepage" />
     <meta
       property="og:description"
-      content="欢迎来到 Linyx 的个人主页。"
-    />
-    <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/266084118?v=4"
+      content="Personal homepage framework for research, projects, publications, and notes."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="hero" aria-labelledby="intro-title">
-        <div class="profile">
-          <img
-            class="avatar"
-            src="https://avatars.githubusercontent.com/u/266084118?v=4"
-            alt="Linyx 的 GitHub 头像"
-            width="128"
-            height="128"
-          />
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">Your Name</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top" class="page">
+      <aside class="profile" aria-label="Profile summary">
+        <div class="photo-slot" role="img" aria-label="Profile photo placeholder">
+          <span>Photo</span>
+        </div>
+
+        <div class="identity">
+          <p class="eyebrow">Personal Homepage</p>
+          <h1>Your Name</h1>
+          <p class="role">Your role / affiliation</p>
+        </div>
+
+        <dl class="profile-list">
           <div>
-            <p class="eyebrow">Personal Homepage</p>
-            <h1 id="intro-title">你好，我是 Linyx。</h1>
-            <p class="lead">
-              这里是我的个人主页。后续我会把项目、笔记和作品慢慢整理到这里。
+            <dt>Affiliation</dt>
+            <dd>To be added</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd>your.email@example.com</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>To be added</dd>
+          </div>
+        </dl>
+
+        <div class="link-stack" aria-label="Profile links">
+          <a href="https://github.com/linyx0729-sudo">GitHub</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">CV</a>
+        </div>
+      </aside>
+
+      <section class="content">
+        <section id="about" class="intro">
+          <p class="eyebrow">About</p>
+          <h2>Build a clear home for your work.</h2>
+          <p>
+            This area is reserved for a short personal introduction. You can use
+            it for your research interests, technical direction, current study,
+            or a compact professional bio.
+          </p>
+
+          <div class="interest-row" aria-label="Research or project interests">
+            <span>Interest area</span>
+            <span>Research topic</span>
+            <span>Project direction</span>
+          </div>
+        </section>
+
+        <section id="news" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">News</p>
+            <h2>Updates</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <time datetime="2026-07">Jul 2026</time>
+              <p>Add your latest update, paper, project, award, or milestone.</p>
+            </article>
+            <article class="timeline-item muted">
+              <time datetime="2026-01">2026</time>
+              <p>Use this list for short public-facing announcements.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="publications" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Publications</p>
+            <h2>Selected Work</h2>
+          </div>
+          <div class="publication-list">
+            <article class="publication">
+              <p class="pub-title">Paper title placeholder</p>
+              <p class="pub-meta">Authors. Venue or preprint, year.</p>
+              <p class="pub-links">
+                <a href="#">Paper</a>
+                <a href="#">Code</a>
+                <a href="#">BibTeX</a>
+              </p>
+            </article>
+            <article class="publication">
+              <p class="pub-title">Another paper or report title</p>
+              <p class="pub-meta">Authors. Venue or preprint, year.</p>
+              <p class="pub-links">
+                <a href="#">Paper</a>
+                <a href="#">Project</a>
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Things to Showcase</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-image-slot">Image</div>
+              <h3>Project placeholder</h3>
+              <p>Short description of the project, method, system, or demo.</p>
+              <a href="#">Details</a>
+            </article>
+            <article class="project-card">
+              <div class="project-image-slot">Image</div>
+              <h3>Project placeholder</h3>
+              <p>Use this card for code, papers, experiments, or coursework.</p>
+              <a href="#">Repository</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Experience</p>
+              <h2>Education</h2>
+            </div>
+            <div class="compact-list">
+              <p><strong>Institution</strong><span>Degree / program / year</span></p>
+              <p><strong>Institution</strong><span>Role / lab / year</span></p>
+            </div>
+          </div>
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Service</p>
+              <h2>Activities</h2>
+            </div>
+            <div class="compact-list">
+              <p><strong>Activity</strong><span>Teaching, service, talks, or awards</span></p>
+              <p><strong>Activity</strong><span>Community, open-source, or notes</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact-band">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Open to future updates.</h2>
+            <p>
+              Add your preferred email, academic profile, social links, or a
+              short note about what people can contact you for.
             </p>
           </div>
-        </div>
-
-        <div class="actions" aria-label="主要链接">
-          <a class="button primary" href="https://github.com/linyx0729-sudo">
-            访问 GitHub
-          </a>
-          <a class="button" href="https://github.com/linyx0729-sudo?tab=repositories">
-            查看项目
-          </a>
-        </div>
-      </section>
-
-      <section class="grid" aria-label="主页内容">
-        <article class="panel accent-a">
-          <p class="kicker">Now</p>
-          <h2>正在建设中</h2>
-          <p>
-            这个页面会作为一个长期更新的入口，用来展示公开项目、学习记录和可分享的成果。
-          </p>
-        </article>
-
-        <article class="panel accent-b">
-          <p class="kicker">GitHub</p>
-          <h2>@linyx0729-sudo</h2>
-          <p>
-            你可以通过 GitHub 了解我的代码仓库和后续更新。
-          </p>
-        </article>
-
-        <article class="panel accent-c">
-          <p class="kicker">Contact</p>
-          <h2>保持连接</h2>
-          <p>
-            如果你想补充邮箱、社交媒体或作品链接，可以直接更新这个主页。
-          </p>
-        </article>
+          <a class="contact-button" href="mailto:your.email@example.com">Email</a>
+        </section>
       </section>
     </main>
   </body>

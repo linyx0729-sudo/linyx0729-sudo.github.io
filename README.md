@@ -1,7 +1,23 @@
-# Linyx Personal Homepage
+# Personal Homepage
 
-This repository powers the GitHub Pages site at:
+This repository powers a lightweight personal homepage for GitHub Pages.
 
-https://linyx0729-sudo.github.io/
+The current framework is intentionally content-light: replace the placeholder
+name, profile details, links, photo slot, publications, and project cards as
+your homepage grows.
 
-It is a lightweight static homepage built with plain HTML and CSS.
+## Structure
+
+- `index.html` contains the homepage sections and placeholder content.
+- `styles.css` contains the responsive layout and visual system.
+- `.nojekyll` tells GitHub Pages to publish the static files directly.
+
+## Design References
+
+The layout borrows broad structural ideas from popular GitHub Pages homepage
+templates without copying their code:
+
+- academicpages: https://github.com/academicpages/academicpages.github.io
+- al-folio: https://github.com/alshedivat/al-folio
+- Minimal Mistakes: https://github.com/mmistakes/minimal-mistakes
+- quick-portfolio: https://github.com/evanca/quick-portfolio
