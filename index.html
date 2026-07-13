@@ -1,181 +1,215 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Name | Personal Homepage</title>
+    <title>Yuxuan Lin | Academic Homepage</title>
     <meta
       name="description"
-      content="A personal homepage framework for research, projects, publications, and notes."
+      content="Academic homepage of Yuxuan Lin, PhD candidate in Computer Science and Technology."
     />
-    <meta property="og:title" content="Your Name | Personal Homepage" />
+    <meta property="og:title" content="Yuxuan Lin | Academic Homepage" />
     <meta
       property="og:description"
-      content="Personal homepage framework for research, projects, publications, and notes."
+      content="Research interests, education, publications, and academic awards."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Back to top">Your Name</a>
+      <a class="brand" href="#top" aria-label="Back to top">Yuxuan Lin</a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#news">News</a>
+        <a href="#education">Education</a>
         <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top" class="page">
-      <aside class="profile" aria-label="Profile summary">
-        <div class="photo-slot" role="img" aria-label="Profile photo placeholder">
-          <span>Photo</span>
-        </div>
-
-        <div class="identity">
-          <p class="eyebrow">Personal Homepage</p>
-          <h1>Your Name</h1>
-          <p class="role">Your role / affiliation</p>
-        </div>
-
-        <dl class="profile-list">
-          <div>
-            <dt>Affiliation</dt>
-            <dd>To be added</dd>
-          </div>
-          <div>
-            <dt>Email</dt>
-            <dd>your.email@example.com</dd>
-          </div>
-          <div>
-            <dt>Location</dt>
-            <dd>To be added</dd>
-          </div>
-        </dl>
-
-        <div class="link-stack" aria-label="Profile links">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Academic Homepage</p>
+        <h1 id="page-title">Yuxuan Lin</h1>
+        <p class="subtitle">
+          PhD Candidate in Computer Science and Technology
+        </p>
+        <p class="affiliation">
+          Hohai University / The University of Melbourne
+        </p>
+        <div class="quick-links" aria-label="Profile links">
+          <a href="mailto:linyx0729@gmail.com">Email</a>
           <a href="https://github.com/linyx0729-sudo">GitHub</a>
-          <a href="#">Google Scholar</a>
-          <a href="#">CV</a>
+          <a href="#publications">Publications</a>
         </div>
-      </aside>
+      </section>
 
-      <section class="content">
-        <section id="about" class="intro">
+      <section id="about" class="section intro">
+        <div class="section-heading">
           <p class="eyebrow">About</p>
-          <h2>Build a clear home for your work.</h2>
-          <p>
-            This area is reserved for a short personal introduction. You can use
-            it for your research interests, technical direction, current study,
-            or a compact professional bio.
-          </p>
+          <h2>Research Profile</h2>
+        </div>
+        <p>
+          I am a PhD candidate in Computer Science and Technology at Hohai
+          University, and a joint PhD student at the Faculty of Engineering and
+          Information Technology, The University of Melbourne.
+        </p>
+        <p>
+          My research focuses on coded computation, heterogeneous distributed
+          systems, cloud computing, edge computing, and latency-aware task
+          scheduling.
+        </p>
+      </section>
 
-          <div class="interest-row" aria-label="Research or project interests">
-            <span>Interest area</span>
-            <span>Research topic</span>
-            <span>Project direction</span>
-          </div>
-        </section>
-
-        <section id="news" class="section">
-          <div class="section-heading">
-            <p class="eyebrow">News</p>
-            <h2>Updates</h2>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item">
-              <time datetime="2026-07">Jul 2026</time>
-              <p>Add your latest update, paper, project, award, or milestone.</p>
-            </article>
-            <article class="timeline-item muted">
-              <time datetime="2026-01">2026</time>
-              <p>Use this list for short public-facing announcements.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="publications" class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Publications</p>
-            <h2>Selected Work</h2>
-          </div>
-          <div class="publication-list">
-            <article class="publication">
-              <p class="pub-title">Paper title placeholder</p>
-              <p class="pub-meta">Authors. Venue or preprint, year.</p>
-              <p class="pub-links">
-                <a href="#">Paper</a>
-                <a href="#">Code</a>
-                <a href="#">BibTeX</a>
+      <section id="education" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>Academic Training</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>2026-Present</time>
+            <div>
+              <h3>The University of Melbourne</h3>
+              <p>
+                Joint PhD Student, Faculty of Engineering and Information
+                Technology, Australia.
               </p>
-            </article>
-            <article class="publication">
-              <p class="pub-title">Another paper or report title</p>
-              <p class="pub-meta">Authors. Venue or preprint, year.</p>
-              <p class="pub-links">
-                <a href="#">Paper</a>
-                <a href="#">Project</a>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2024-Present</time>
+            <div>
+              <h3>Hohai University</h3>
+              <p>
+                PhD Candidate, Computer Science and Technology, Faculty of
+                Computer Science and Software Engineering, China.
               </p>
-            </article>
-          </div>
-        </section>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2021-2024</time>
+            <div>
+              <h3>Hohai University</h3>
+              <p>
+                MSc, Computer Science and Technology. GPA: 91.05, ranked 1 of
+                40.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2017-2021</time>
+            <div>
+              <h3>Hohai University</h3>
+              <p>
+                BSc, Computer Science and Technology, Faculty of Computer and
+                Information. GPA: 87.36.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <section id="projects" class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Things to Showcase</h2>
-          </div>
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-image-slot">Image</div>
-              <h3>Project placeholder</h3>
-              <p>Short description of the project, method, system, or demo.</p>
-              <a href="#">Details</a>
-            </article>
-            <article class="project-card">
-              <div class="project-image-slot">Image</div>
-              <h3>Project placeholder</h3>
-              <p>Use this card for code, papers, experiments, or coursework.</p>
-              <a href="#">Repository</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="section split">
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Experience</p>
-              <h2>Education</h2>
-            </div>
-            <div class="compact-list">
-              <p><strong>Institution</strong><span>Degree / program / year</span></p>
-              <p><strong>Institution</strong><span>Role / lab / year</span></p>
-            </div>
-          </div>
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Service</p>
-              <h2>Activities</h2>
-            </div>
-            <div class="compact-list">
-              <p><strong>Activity</strong><span>Teaching, service, talks, or awards</span></p>
-              <p><strong>Activity</strong><span>Community, open-source, or notes</span></p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" class="section contact-band">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Open to future updates.</h2>
-            <p>
-              Add your preferred email, academic profile, social links, or a
-              short note about what people can contact you for.
+      <section id="publications" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Research Papers</h2>
+        </div>
+        <ol class="publication-list">
+          <li>
+            <p class="pub-title">
+              Cost-constrained Node Selection for Timely Coded Computation over
+              Heterogeneous Systems
             </p>
-          </div>
-          <a class="contact-button" href="mailto:your.email@example.com">Email</a>
-        </section>
+            <p>
+              B. Tang, <strong>Y. Lin</strong>, S. Zhou, X. Zai, and B. Ye.
+              <em>IEEE Transactions on Computers</em>, 2026. Recently accepted.
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">
+              Coded Redundancy for Reducing Task Average Latency in Distributed
+              Stream Processing Systems
+            </p>
+            <p>
+              <strong>Y. Lin</strong>, B. Tang, S. Wang, L. Chen, X. Jiang, and
+              R. Buyya. <em>IEEE International Conference on Cloud Computing
+              (IEEE CLOUD)</em>, 2026. Recently accepted.
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">
+              Optimized Power Control for Deadline-aware Coded Computing in Edge
+              Environments
+            </p>
+            <p>
+              Z. Liang, <strong>Y. Lin</strong>, and B. Tang.
+              <em>4th International Conference on Cloud Computing, Big Data
+              Application and Software Engineering (CBASE)</em>, 2025,
+              pp. 817-821.
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">
+              Deadline-aware Load Allocation for Coded Computation over
+              Heterogeneous Clusters
+            </p>
+            <p>
+              S. Cheng, <strong>Y. Lin</strong>, and B. Tang.
+              <em>5th International Conference on Big Data, Artificial
+              Intelligence and Software Engineering (ICBASE)</em>, 2024,
+              pp. 102-105.
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">
+              Efficient Node Selection for Coding-based Timely Computation over
+              Heterogeneous Systems
+            </p>
+            <p>
+              <strong>Y. Lin</strong>, B. Tang, S. Zhou, et al.
+              <em>IEEE International Conference on Parallel and Distributed
+              Processing with Applications (ISPA)</em>, 2023, pp. 246-253.
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">
+              A Content-based Intelligent Label Classification System for
+              Warehouse Management
+            </p>
+            <p>
+              Z. Xie, <strong>Y. Lin</strong>, C. Ji, et al.
+              <em>IEEE International Conference on Progress in Informatics and
+              Computing (PIC)</em>, 2020, pp. 258-262.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="awards" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Awards</p>
+          <h2>Selected Honors</h2>
+        </div>
+        <div class="honor-list">
+          <article>
+            <time>2024</time>
+            <p>Excellent Master Degree Graduate, Hohai University.</p>
+          </article>
+          <article>
+            <time>2021</time>
+            <p>Outstanding Graduate, Hohai University.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-band">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Email</h2>
+          <p>linyx0729@gmail.com</p>
+        </div>
+        <a class="contact-button" href="mailto:linyx0729@gmail.com">Contact</a>
       </section>
     </main>
   </body>

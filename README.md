@@ -1,14 +1,13 @@
-# Personal Homepage
+# Yuxuan Lin Academic Homepage
 
-This repository powers a lightweight personal homepage for GitHub Pages.
+This repository powers a lightweight academic homepage for GitHub Pages.
 
-The current framework is intentionally content-light: replace the placeholder
-name, profile details, links, photo slot, publications, and project cards as
-your homepage grows.
+The current version focuses on academic content: education, research profile,
+publications, selected graduate honors, and contact information.
 
 ## Structure
 
-- `index.html` contains the homepage sections and placeholder content.
+- `index.html` contains the homepage sections and academic content.
 - `styles.css` contains the responsive layout and visual system.
 - `.nojekyll` tells GitHub Pages to publish the static files directly.
 
