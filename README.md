@@ -29,5 +29,7 @@ Open `http://127.0.0.1:8000`. GitHub Pages publishes the repository root on `mai
   bibliography numbering updates automatically. Keep author order, italicized
   venues, and acceptance notices consistent with the existing entries.
 - The layout adapts to small screens and includes a print stylesheet.
+- When changing the stylesheet, update its version query in `index.html` so
+  returning visitors load the matching styles instead of a cached older copy.
 - Times New Roman is used when installed, with Times and the browser's serif font
   as fallbacks. No fonts or other assets are loaded from external services.
