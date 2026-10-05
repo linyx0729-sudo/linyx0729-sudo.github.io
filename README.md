@@ -2,8 +2,9 @@
 
 This repository powers a lightweight academic homepage for GitHub Pages.
 
-The current version focuses on academic content: education, research profile,
-publications, selected graduate honors, and contact information.
+The page presents a research profile, publications, education, selected honors,
+and contact information. It uses Times New Roman throughout, a white background,
+and a restrained single-page layout inspired by academic CVs.
 
 ## Structure
 
@@ -11,12 +12,22 @@ publications, selected graduate honors, and contact information.
 - `styles.css` contains the responsive layout and visual system.
 - `.nojekyll` tells GitHub Pages to publish the static files directly.
 
-## Design References
+## Local preview
 
-The layout borrows broad structural ideas from popular GitHub Pages homepage
-templates without copying their code:
+No build step or JavaScript dependencies are required. From this directory, run:
 
-- academicpages: https://github.com/academicpages/academicpages.github.io
-- al-folio: https://github.com/alshedivat/al-folio
-- Minimal Mistakes: https://github.com/mmistakes/minimal-mistakes
-- quick-portfolio: https://github.com/evanca/quick-portfolio
+```sh
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8000`. GitHub Pages publishes the repository root on `main`.
+
+## Content maintenance
+
+- Contact addresses appear at the top, in the order Hohai, Melbourne, personal.
+- Add new publications at the beginning of `.publication-list`; the
+  bibliography numbering updates automatically. Keep author order, italicized
+  venues, and acceptance notices consistent with the existing entries.
+- The layout adapts to small screens and includes a print stylesheet.
+- Times New Roman is used when installed, with Times and the browser's serif font
+  as fallbacks. No fonts or other assets are loaded from external services.
